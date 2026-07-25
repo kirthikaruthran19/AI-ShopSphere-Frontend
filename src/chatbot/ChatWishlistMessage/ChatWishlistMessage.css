@@ -1,0 +1,37 @@
+.chat-wishlist-message{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.chat-wishlist-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.chat-wishlist-items{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.chat-wishlist-empty{
+
+    text-align:center;
+
+    padding:20px;
+
+}

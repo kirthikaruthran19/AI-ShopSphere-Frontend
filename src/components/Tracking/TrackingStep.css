@@ -1,0 +1,135 @@
+.tracking-step {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    position: relative;
+
+    width: 100%;
+
+}
+
+.step-circle {
+
+    width: 40px;
+
+    height: 40px;
+
+    min-width: 40px;
+
+    border-radius: 50%;
+
+    background: #e5e7eb;
+
+    color: transparent;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.tracking-step.completed .step-circle {
+
+    background: #22c55e;
+
+    color: #ffffff;
+
+}
+
+.tracking-step:not(:last-child)::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 19px;
+
+    top: 40px;
+
+    width: 2px;
+
+    height: calc(100% + 20px);
+
+    background: #d1d5db;
+
+}
+
+.step-content {
+
+    flex: 1;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    padding: 18px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.05);
+
+}
+
+.step-content h4 {
+
+    margin: 0 0 8px;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+}
+
+.step-content p {
+
+    margin: 0;
+
+    color: #6b7280;
+
+    line-height: 1.6;
+
+}
+
+.step-content span {
+
+    display: block;
+
+    margin-top: 12px;
+
+    font-size: 13px;
+
+    color: #9ca3af;
+
+}
+
+@media (max-width:768px){
+
+    .tracking-step{
+
+        gap:15px;
+
+    }
+
+    .step-content{
+
+        padding:15px;
+
+    }
+
+}

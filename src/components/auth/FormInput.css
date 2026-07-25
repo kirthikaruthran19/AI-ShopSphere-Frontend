@@ -1,0 +1,21 @@
+.form-input-wrapper .form-control {
+    height: 52px;
+    border-radius: 12px;
+    border: 1px solid #dcdcdc;
+    transition: all .3s ease;
+    box-shadow: none;
+}
+
+.form-input-wrapper .form-control:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 .2rem rgba(108,99,255,.15);
+}
+
+.form-input-wrapper .input-group-text {
+    border-radius: 12px 0 0 12px;
+    background: #fff;
+}
+
+.form-input-wrapper .invalid-feedback {
+    display: block;
+}

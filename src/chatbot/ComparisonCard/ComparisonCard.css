@@ -1,0 +1,56 @@
+.comparison-card {
+    background: #fff;
+    border-radius: 18px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    overflow-x: auto;
+}
+
+.comparison-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ececec;
+}
+
+.comparison-header h6 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.comparison-table {
+    min-width: 600px;
+}
+
+.comparison-row {
+    display: grid;
+    grid-template-columns: 140px repeat(auto-fit, minmax(180px, 1fr));
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.comparison-row:last-child {
+    border-bottom: none;
+}
+
+.comparison-row div {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.comparison-heading {
+    background: #f8f9fa;
+    font-weight: 600;
+}
+
+.rating-cell {
+    gap: 6px;
+    color: #f4b400;
+}
+
+@media (max-width:768px){
+
+    .comparison-card{
+        overflow-x:auto;
+    }
+
+}

@@ -1,0 +1,132 @@
+.chat-cart-card {
+    width: 100%;
+    max-width: 380px;
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.chat-cart-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 36px rgba(0,0,0,.12);
+}
+
+.chat-cart-top {
+    display: flex;
+    gap: 16px;
+}
+
+.chat-cart-image {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.chat-cart-details {
+    flex: 1;
+}
+
+.chat-cart-title {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #212529;
+}
+
+.chat-cart-price {
+    margin: 0;
+    color: #0d6efd;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.chat-cart-qty {
+    display: inline-block;
+    margin-top: 8px;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.chat-cart-footer {
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid #ececec;
+}
+
+.chat-cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.chat-cart-total strong {
+    color: #0d6efd;
+    font-size: 18px;
+}
+
+.chat-cart-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-remove-btn {
+    width: 46px;
+    border: none;
+    border-radius: 10px;
+    background: #f8f9fa;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.chat-remove-btn:hover {
+    background: #ffe5e5;
+}
+
+.chat-checkout-btn {
+    flex: 1;
+    border: none;
+    border-radius: 10px;
+    background: #0d6efd;
+    color: #fff;
+    padding: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.chat-checkout-btn:hover {
+    background: #0b5ed7;
+}
+
+@media (max-width:576px) {
+
+    .chat-cart-card {
+        max-width: 100%;
+    }
+
+    .chat-cart-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .chat-cart-image {
+        width: 120px;
+        height: 120px;
+    }
+}

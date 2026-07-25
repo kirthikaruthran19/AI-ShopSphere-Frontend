@@ -1,0 +1,80 @@
+.chat-loading {
+    width: 100%;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.06);
+}
+
+.chat-loading-spinner {
+    display: flex;
+    gap: 8px;
+}
+
+.chat-loading-spinner span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #0d6efd;
+    animation: bounce 0.8s infinite ease-in-out;
+}
+
+.chat-loading-spinner span:nth-child(2) {
+    animation-delay: .15s;
+}
+
+.chat-loading-spinner span:nth-child(3) {
+    animation-delay: .3s;
+}
+
+.chat-loading-text {
+    margin: 0;
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.chat-loading.ai {
+    background: #f8fbff;
+}
+
+.chat-loading.products {
+    background: #fafafa;
+}
+
+.chat-loading.orders {
+    background: #fcfcfc;
+}
+
+.chat-loading.profile {
+    background: #fdfdfd;
+}
+
+@keyframes bounce {
+
+    0%,
+    80%,
+    100% {
+        transform: scale(.5);
+        opacity: .5;
+    }
+
+    40% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .chat-loading {
+        padding: 20px;
+    }
+
+}

@@ -1,0 +1,128 @@
+.address-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin-top:30px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.address-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.address-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.address-grid .full{
+
+    grid-column:1/-1;
+
+}
+
+.address-grid label{
+
+    display:flex;
+
+    gap:8px;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+.address-grid input,
+.address-grid textarea{
+
+    width:100%;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    padding:12px;
+
+}
+
+.address-grid input:focus,
+.address-grid textarea:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+}
+
+.address-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+.save-address-btn,
+.cancel-address-btn,
+.address-edit-btn{
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:12px 20px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.save-address-btn,
+.address-edit-btn{
+
+    background:#2563eb;
+
+    color:#fff;
+
+}
+
+.cancel-address-btn{
+
+    background:#f3f4f6;
+
+}
+
+@media(max-width:768px){
+
+.address-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}

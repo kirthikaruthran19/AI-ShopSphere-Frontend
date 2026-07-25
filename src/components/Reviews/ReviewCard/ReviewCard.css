@@ -1,0 +1,85 @@
+.review-card {
+
+    background: #fff;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .08);
+
+    margin-bottom: 20px;
+
+}
+
+.review-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 15px;
+
+}
+
+.review-user {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+}
+
+.verified-badge {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    color: #198754;
+
+    font-size: .85rem;
+
+}
+
+.review-title {
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+
+}
+
+.review-comment {
+
+    color: #6c757d;
+
+    line-height: 1.7;
+
+    margin-bottom: 12px;
+
+}
+
+.review-date {
+
+    color: #adb5bd;
+
+}
+
+.review-actions {
+
+    display: flex;
+
+    gap: 10px;
+
+}

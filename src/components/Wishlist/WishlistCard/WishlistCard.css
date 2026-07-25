@@ -1,0 +1,155 @@
+.ws-card{
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    border:1px solid #e5e7eb;
+    transition:.35s;
+}
+
+.ws-card:hover{
+    box-shadow:0 20px 45px rgba(15,23,42,.10);
+}
+
+.ws-card-image-wrapper{
+    display:block;
+    position:relative;
+    background:#f8fafc;
+}
+
+.ws-card-image{
+    width:100%;
+    height:260px;
+    object-fit:contain;
+    padding:25px;
+    transition:.35s;
+}
+
+.ws-card:hover .ws-card-image{
+    transform:scale(1.05);
+}
+
+.ws-card-badge{
+    position:absolute;
+    top:18px;
+    left:18px;
+    padding:6px 14px;
+    border-radius:50px;
+    background:#ef4444;
+    color:#fff;
+    font-size:.8rem;
+    font-weight:600;
+}
+
+.ws-card-content{
+    padding:24px;
+}
+
+.ws-card-brand{
+    margin:0;
+    font-size:.85rem;
+    color:#64748b;
+    text-transform:uppercase;
+}
+
+.ws-card-title{
+    display:block;
+    margin:10px 0 18px;
+    color:#111827;
+    text-decoration:none;
+    font-size:1.05rem;
+    font-weight:700;
+    line-height:1.5;
+    min-height:52px;
+}
+
+.ws-card-title:hover{
+    color:#2563eb;
+}
+
+.ws-card-stock{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:18px;
+    font-size:.9rem;
+    color:#16a34a;
+}
+
+.ws-card-price{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:24px;
+}
+
+.ws-card-final-price{
+    font-size:1.45rem;
+    font-weight:700;
+    color:#111827;
+}
+
+.ws-card-original-price{
+    color:#94a3b8;
+    text-decoration:line-through;
+}
+
+.ws-card-actions{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.ws-btn-cart,
+.ws-btn-buy{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    height:46px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.ws-btn-cart{
+    border:none;
+    background:#2563eb;
+    color:#fff;
+}
+
+.ws-btn-cart:hover{
+    background:#1d4ed8;
+}
+
+.ws-btn-buy{
+    border:1px solid #2563eb;
+    color:#2563eb;
+    background:#fff;
+}
+
+.ws-btn-buy:hover{
+    background:#2563eb;
+    color:#fff;
+}
+
+.ws-btn-remove{
+    width:100%;
+    margin-top:14px;
+    height:46px;
+    border:none;
+    border-radius:12px;
+    background:#fee2e2;
+    color:#dc2626;
+    font-weight:600;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    transition:.3s;
+}
+
+.ws-btn-remove:hover{
+    background:#dc2626;
+    color:#fff;
+}

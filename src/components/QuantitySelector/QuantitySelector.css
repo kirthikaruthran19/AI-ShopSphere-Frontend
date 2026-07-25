@@ -1,0 +1,50 @@
+.quantity-selector{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:max-content;
+    margin:15px 0;
+}
+
+.qty-btn{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:10px;
+    background:#0d6efd;
+    color:#fff;
+    font-size:1.3rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.qty-btn:hover:not(:disabled){
+    background:#0b5ed7;
+}
+
+.qty-btn:disabled{
+    opacity:.5;
+    cursor:not-allowed;
+}
+
+.quantity-selector input{
+    width:70px;
+    height:45px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    text-align:center;
+    font-size:1rem;
+    font-weight:600;
+    outline:none;
+}
+
+.quantity-selector input::-webkit-inner-spin-button,
+.quantity-selector input::-webkit-outer-spin-button{
+    -webkit-appearance:none;
+    margin:0;
+}
+
+.quantity-selector input[type="number"]{
+    -moz-appearance:textfield;
+}

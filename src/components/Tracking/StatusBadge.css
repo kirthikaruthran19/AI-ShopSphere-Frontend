@@ -1,0 +1,38 @@
+.status-badge{
+
+    padding:8px 16px;
+
+    border-radius:20px;
+
+    color:#fff;
+
+    font-weight:600;
+}
+
+.status-badge.Placed{
+    background:#3b82f6;
+}
+
+.status-badge.Confirmed{
+    background:#8b5cf6;
+}
+
+.status-badge.Packed{
+    background:#f59e0b;
+}
+
+.status-badge.Shipped{
+    background:#06b6d4;
+}
+
+.status-badge.Out\ for\ Delivery{
+    background:#f97316;
+}
+
+.status-badge.Delivered{
+    background:#22c55e;
+}
+
+.status-badge.Cancelled{
+    background:#ef4444;
+}

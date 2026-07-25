@@ -1,0 +1,39 @@
+.chat-order-message{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.chat-order-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.chat-order-items{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.chat-order-empty{
+
+    text-align:center;
+
+    padding:20px;
+
+    color:#666;
+
+}

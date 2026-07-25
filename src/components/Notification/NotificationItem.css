@@ -1,0 +1,332 @@
+/* ==========================================
+   Notification Item
+========================================== */
+
+.notification-item {
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    padding: 18px 20px;
+
+    cursor: pointer;
+
+    border-bottom: 1px solid rgba(226, 232, 240, .75);
+
+    background: transparent;
+
+    transition:
+        background .25s ease,
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+
+.notification-item:last-child {
+
+    border-bottom: none;
+
+}
+
+.notification-item:hover {
+
+    background: rgba(248, 250, 252, .95);
+
+    box-shadow:
+        inset 0 0 0 1px rgba(37, 99, 235, .05);
+
+}
+
+/* ==========================================
+   Unread State
+========================================== */
+
+.notification-item.unread {
+
+    background: linear-gradient(
+        90deg,
+        rgba(219, 234, 254, .45),
+        rgba(255,255,255,.9)
+    );
+
+}
+
+.notification-item.unread::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 12px;
+    bottom: 12px;
+
+    width: 4px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        180deg,
+        #2563eb,
+        #60a5fa
+    );
+
+}
+
+/* ==========================================
+   Icon
+========================================== */
+
+.notification-icon {
+
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #f8fafc,
+        #eef2ff
+    );
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.8),
+        0 8px 18px rgba(15,23,42,.08);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+
+.notification-item:hover .notification-icon {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.9),
+        0 12px 25px rgba(37,99,235,.18);
+
+}
+
+/* ==========================================
+   Content
+========================================== */
+
+.notification-content {
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+.notification-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+.notification-content h6 {
+
+    margin: 0;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: #0f172a;
+
+    line-height: 1.4;
+
+}
+
+.notification-content p {
+
+    margin: 8px 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    word-break: break-word;
+
+}
+
+.notification-content small {
+
+    display: block;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+}
+
+/* ==========================================
+   Unread Dot
+========================================== */
+
+.unread-dot {
+
+    color: #2563eb;
+
+    font-size: 10px;
+
+    animation: unreadPulse 1.6s infinite;
+
+    flex-shrink: 0;
+
+}
+
+@keyframes unreadPulse {
+
+    0% {
+
+        transform: scale(1);
+
+        opacity: 1;
+
+    }
+
+    50% {
+
+        transform: scale(1.4);
+
+        opacity: .55;
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+        opacity: 1;
+
+    }
+
+}
+
+/* ==========================================
+   Icons
+========================================== */
+
+.icon {
+
+    font-size: 20px;
+
+}
+
+.icon.order {
+
+    color: #2563eb;
+
+}
+
+.icon.payment {
+
+    color: #16a34a;
+
+}
+
+.icon.review {
+
+    color: #f59e0b;
+
+}
+
+.icon.account {
+
+    color: #9333ea;
+
+}
+
+.icon.system {
+
+    color: #64748b;
+
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width: 768px) {
+
+    .notification-item {
+
+        padding: 16px;
+
+        gap: 14px;
+
+    }
+
+    .notification-icon {
+
+        width: 46px;
+        height: 46px;
+
+    }
+
+    .icon {
+
+        font-size: 18px;
+
+    }
+
+    .notification-content h6 {
+
+        font-size: 14px;
+
+    }
+
+    .notification-content p {
+
+        font-size: 13px;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .notification-item {
+
+        padding: 14px;
+
+    }
+
+    .notification-icon {
+
+        width: 42px;
+        height: 42px;
+
+    }
+
+    .notification-top {
+
+        align-items: flex-start;
+
+    }
+
+}

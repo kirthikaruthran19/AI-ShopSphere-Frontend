@@ -1,0 +1,51 @@
+.chat-cart-message{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.chat-cart-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.chat-cart-items{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.chat-cart-summary{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    font-weight:600;
+
+    padding-top:10px;
+
+    border-top:1px solid #ddd;
+
+}
+
+.chat-cart-empty{
+
+    text-align:center;
+
+    padding:20px;
+
+}

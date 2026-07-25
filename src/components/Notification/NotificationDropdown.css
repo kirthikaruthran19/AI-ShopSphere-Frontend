@@ -1,0 +1,381 @@
+.notification-dropdown {
+
+    position: absolute;
+
+    top: 62px;
+    right: 0;
+
+    width: 390px;
+    max-height: 560px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background: rgba(255,255,255,.88);
+
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+
+    border: 1px solid rgba(255,255,255,.35);
+
+    box-shadow:
+        0 30px 70px rgba(15,23,42,.18),
+        0 10px 30px rgba(15,23,42,.08);
+
+    animation: dropdownFade .28s ease;
+
+    z-index: 9999;
+
+}
+
+/* =========================
+        Animation
+========================= */
+
+@keyframes dropdownFade{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(-12px)
+            scale(.96);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+/* =========================
+          Header
+========================= */
+
+.notification-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 20px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(248,250,252,.95),
+            rgba(255,255,255,.88)
+        );
+
+    border-bottom:1px solid rgba(226,232,240,.8);
+
+}
+
+.notification-title{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+.notification-title:hover{
+
+    color:#2563eb;
+
+}
+
+/* =========================
+        Actions
+========================= */
+
+.notification-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.action-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    padding:8px 12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    cursor:pointer;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.action-btn:hover{
+
+    background:#2563eb;
+
+    color:#fff;
+
+    transform:translateY(-2px);
+
+}
+
+.action-btn.danger{
+
+    background:#fff1f2;
+
+    color:#dc2626;
+
+}
+
+.action-btn.danger:hover{
+
+    background:#dc2626;
+
+    color:#fff;
+
+}
+
+/* =========================
+            Body
+========================= */
+
+.notification-body{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    max-height:470px;
+
+    scrollbar-width:thin;
+
+    scrollbar-color:#cbd5e1 transparent;
+
+}
+
+/* Chrome */
+
+.notification-body::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.notification-body::-webkit-scrollbar-track{
+
+    background:transparent;
+
+}
+
+.notification-body::-webkit-scrollbar-thumb{
+
+    background:#cbd5e1;
+
+    border-radius:30px;
+
+}
+
+.notification-body::-webkit-scrollbar-thumb:hover{
+
+    background:#94a3b8;
+
+}
+
+/* =========================
+        Empty State
+========================= */
+
+.notification-empty{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:55px 30px;
+
+}
+
+.empty-icon{
+
+    width:82px;
+
+    height:82px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    font-size:34px;
+
+    margin-bottom:20px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #eff6ff,
+            #dbeafe
+        );
+
+    box-shadow:
+
+        inset 0 1px 0 rgba(255,255,255,.8),
+
+        0 12px 25px rgba(37,99,235,.12);
+
+}
+
+.notification-empty h5{
+
+    margin:0;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.notification-empty p{
+
+    margin-top:10px;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    color:#64748b;
+
+}
+
+/* =========================
+        Mobile
+========================= */
+
+@media (max-width:768px){
+
+    .notification-dropdown{
+
+        position:fixed;
+
+        top:75px;
+
+        right:16px;
+
+        left:16px;
+
+        width:auto;
+
+        max-height:75vh;
+
+        border-radius:18px;
+
+    }
+
+    .notification-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:14px;
+
+    }
+
+    .notification-actions{
+
+        width:100%;
+
+        justify-content:space-between;
+
+    }
+
+    .action-btn{
+
+        flex:1;
+
+        justify-content:center;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .notification-dropdown{
+
+        top:68px;
+
+        right:10px;
+
+        left:10px;
+
+        border-radius:16px;
+
+    }
+
+    .notification-title{
+
+        font-size:17px;
+
+    }
+
+    .action-btn{
+
+        font-size:12px;
+
+        padding:8px;
+
+    }
+
+}

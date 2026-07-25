@@ -1,0 +1,204 @@
+.hero-section{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #eef2ff,
+        #ffffff,
+        #ecfeff
+    );
+    overflow:hidden;
+}
+
+.hero-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.hero-badge{
+    display:inline-block;
+    background:#eef2ff;
+    color:var(--primary);
+    padding:10px 18px;
+    border-radius:50px;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+.hero-content h1{
+    font-size:64px;
+    line-height:1.2;
+    margin-bottom:25px;
+    color:var(--text-primary);
+}
+
+.hero-content h1 span{
+    color:var(--primary);
+}
+
+.hero-content p{
+    font-size:18px;
+    color:var(--text-secondary);
+    margin-bottom:35px;
+    line-height:1.7;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    margin-bottom:50px;
+}
+
+.primary-btn{
+    background:var(--primary);
+    color:#fff;
+    padding:16px 34px;
+    border-radius:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.primary-btn:hover{
+    background:var(--primary-dark);
+    color:#fff;
+}
+
+.secondary-btn{
+    border:2px solid var(--primary);
+    background:transparent;
+    color:var(--primary);
+    padding:16px 34px;
+    border-radius:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    text-decoration:none;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.secondary-btn:hover{
+    background:var(--primary);
+    color:#fff;
+}
+
+.hero-stats{
+    display:flex;
+    gap:50px;
+}
+
+.hero-stats h2{
+    color:var(--primary);
+    margin-bottom:6px;
+}
+
+.hero-stats span{
+    color:var(--text-secondary);
+}
+
+/* ==========================
+   Recommendation Card
+========================== */
+
+.glass-card{
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.45);
+    border-radius:24px;
+    padding:40px;
+    box-shadow:var(--shadow-lg);
+}
+
+.hero-recommend-badge{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:30px;
+    background:#eef2ff;
+    color:var(--primary);
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.glass-card h3{
+    font-size:38px;
+    font-weight:700;
+    color:#1f2937;
+    margin-bottom:20px;
+    line-height:1.3;
+}
+
+.glass-card p{
+    font-size:17px;
+    color:#6b7280;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.hero-product-price{
+    font-size:42px;
+    font-weight:700;
+    color:var(--primary);
+    margin-bottom:30px;
+}
+
+.hero-recommend-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--primary);
+    color:#fff;
+    padding:15px 32px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.hero-recommend-btn:hover{
+    background:var(--primary-dark);
+    color:#fff;
+    transform:translateY(-2px);
+}
+
+@media(max-width:992px){
+
+    .hero-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-stats{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .glass-card{
+        margin-top:20px;
+    }
+
+    .glass-card h3{
+        font-size:30px;
+    }
+
+    .hero-product-price{
+        font-size:34px;
+    }
+
+}

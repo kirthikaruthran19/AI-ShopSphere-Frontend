@@ -1,0 +1,73 @@
+.tracking-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 18px;
+}
+
+.tracking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.tracking-status {
+    background: #eef6ff;
+    color: #2563eb;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.tracking-summary {
+    margin-bottom: 20px;
+}
+
+.tracking-summary p {
+    margin: 6px 0;
+}
+
+.tracking-timeline {
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    gap: 14px;
+    padding-bottom: 22px;
+}
+
+.timeline-item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 28px;
+    width: 2px;
+    height: calc(100% - 8px);
+    background: #d1d5db;
+}
+
+.timeline-icon {
+    color: #16a34a;
+    font-size: 20px;
+    z-index: 1;
+    background: white;
+}
+
+.timeline-content h6 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.timeline-content p {
+    margin: 4px 0;
+    color: #555;
+}
+
+.timeline-content small {
+    color: #888;
+}

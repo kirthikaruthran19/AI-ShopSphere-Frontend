@@ -1,0 +1,25 @@
+.product-message {
+    width: 100%;
+    margin: 12px 0;
+}
+
+.product-message-header {
+    margin-bottom: 12px;
+}
+
+.product-message-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.product-message-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.product-message-list > * {
+    width: 100%;
+}

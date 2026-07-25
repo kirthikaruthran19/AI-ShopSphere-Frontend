@@ -1,0 +1,109 @@
+.ai-chat-prompts{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    width:100%;
+
+}
+
+.ai-chat-prompts-title{
+
+    margin:0;
+
+    font-size:.95rem;
+
+    font-weight:700;
+
+    color:#374151;
+
+}
+
+.ai-chat-prompts-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.ai-chat-prompt-chip{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 16px;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:30px;
+
+    background:#ffffff;
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+
+    font-size:.9rem;
+
+    color:#374151;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.05);
+
+}
+
+.ai-chat-prompt-chip:hover{
+
+    background:#2563eb;
+
+    border-color:#2563eb;
+
+    color:#ffffff;
+
+    transform:translateY(-2px);
+
+}
+
+.ai-chat-prompt-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:1rem;
+
+}
+
+@media(max-width:576px){
+
+.ai-chat-prompts{
+
+    gap:12px;
+
+}
+
+.ai-chat-prompts-list{
+
+    gap:8px;
+
+}
+
+.ai-chat-prompt-chip{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+}

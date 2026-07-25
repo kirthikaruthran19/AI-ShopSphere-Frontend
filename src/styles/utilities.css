@@ -1,0 +1,14 @@
+.text-gradient{
+    background:linear-gradient(90deg,#4f46e5,#7c3aed,#06b6d4);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.shadow-hover{
+    transition:var(--transition);
+}
+
+.shadow-hover:hover{
+    transform:translateY(-6px);
+    box-shadow:var(--shadow-lg);
+}

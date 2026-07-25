@@ -1,0 +1,12 @@
+.register-btn{
+    height:52px;
+    border-radius:12px;
+    font-size:1rem;
+    font-weight:600;
+    transition:.3s;
+}
+
+.register-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(13,110,253,.25);
+}

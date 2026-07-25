@@ -1,0 +1,61 @@
+.chat-widget-button{
+
+    position:fixed;
+
+    right:24px;
+
+    bottom:24px;
+
+    width:64px;
+
+    height:64px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#0d6efd;
+
+    color:#ffffff;
+
+    font-size:28px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    box-shadow:0 10px 30px rgba(13,110,253,.35);
+
+    transition:all .3s ease;
+
+    z-index:10000;
+
+}
+
+.chat-widget-button:hover{
+
+    transform:scale(1.08);
+
+}
+
+@media(max-width:576px){
+
+    .chat-widget-button{
+
+        width:58px;
+
+        height:58px;
+
+        right:16px;
+
+        bottom:16px;
+
+        font-size:24px;
+
+    }
+
+}

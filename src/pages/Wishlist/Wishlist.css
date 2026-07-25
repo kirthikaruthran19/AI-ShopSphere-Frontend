@@ -1,0 +1,10 @@
+.ws-page {
+    min-height: 100vh;
+    padding: 40px 0 70px;
+    background: #f8fafc;
+}
+
+.ws-container {
+    width: min(1400px, 92%);
+    margin: 0 auto;
+}

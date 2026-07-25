@@ -1,0 +1,164 @@
+.personal-info-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+}
+
+.personal-info-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.personal-info-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.full-width{
+
+    grid-column:1/-1;
+
+}
+
+.form-group label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+.form-group input,
+.form-group textarea{
+
+    padding:12px 15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:.95rem;
+
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+}
+
+.personal-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+.edit-btn,
+.save-btn,
+.cancel-btn{
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:12px 22px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.edit-btn,
+.save-btn{
+
+    background:#2563eb;
+
+    color:#fff;
+
+}
+
+.cancel-btn{
+
+    background:#f3f4f6;
+
+}
+
+@media(max-width:768px){
+
+.personal-info-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.full-width{
+
+    grid-column:auto;
+
+}
+
+.personal-info-header{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.personal-actions{
+
+    flex-direction:column;
+
+}
+
+}

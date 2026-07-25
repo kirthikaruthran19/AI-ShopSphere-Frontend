@@ -1,0 +1,534 @@
+/* =====================================================
+   Notifications Page
+===================================================== */
+
+.notifications-page{
+
+    min-height:100vh;
+
+    padding-top:2rem;
+    padding-bottom:2rem;
+
+}
+
+/* =====================================================
+   Header
+===================================================== */
+
+.notifications-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:24px;
+
+    margin-bottom:32px;
+
+    padding:24px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.35);
+
+    box-shadow:
+        0 20px 45px rgba(15,23,42,.08);
+
+}
+
+.notifications-header h2{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin:0;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.notification-count{
+
+    display:inline-block;
+
+    margin-top:8px;
+
+    color:#64748b;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+/* =====================================================
+   Action Buttons
+===================================================== */
+
+.notification-actions{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.notification-actions button{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:12px 18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.primary-btn{
+
+    background:#2563eb;
+
+    color:#fff;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(37,99,235,.25);
+
+}
+
+.danger-btn{
+
+    background:#ef4444;
+
+    color:#fff;
+
+}
+
+.danger-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(239,68,68,.25);
+
+}
+
+/* =====================================================
+   Filters
+===================================================== */
+
+.notification-filter{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-bottom:28px;
+
+}
+
+.notification-filter button{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 20px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:#f1f5f9;
+
+    color:#475569;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.notification-filter button:hover{
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+}
+
+.notification-filter button.active{
+
+    background:#2563eb;
+
+    color:#fff;
+
+}
+
+.filter-badge{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-width:22px;
+
+    height:22px;
+
+    padding:0 6px;
+
+    border-radius:999px;
+
+    background:#ef4444;
+
+    color:#fff;
+
+    font-size:11px;
+
+    font-weight:700;
+
+}
+
+/* =====================================================
+   Notification Cards
+===================================================== */
+
+.notification-card{
+
+    margin-bottom:18px;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.9);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.4);
+
+    box-shadow:
+        0 12px 30px rgba(15,23,42,.08);
+
+    cursor:pointer;
+
+    transition:
+        transform .25s,
+        box-shadow .25s,
+        border-color .25s;
+
+}
+
+.notification-card:hover{
+
+    transform:translateY(-3px);
+
+    border-color:#bfdbfe;
+
+    box-shadow:
+        0 18px 35px rgba(37,99,235,.12);
+
+}
+
+.notification-card.unread{
+
+    border-left:5px solid #2563eb;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(219,234,254,.35),
+            rgba(255,255,255,.96)
+        );
+
+}
+
+/* =====================================================
+   Card Header
+===================================================== */
+
+.card-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+    margin-bottom:10px;
+
+}
+
+.card-header h5{
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.status-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    animation:statusPulse 1.6s infinite;
+
+    flex-shrink:0;
+
+}
+
+@keyframes statusPulse{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        transform:scale(1.5);
+
+        opacity:.5;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+.notification-card p{
+
+    margin-bottom:12px;
+
+    color:#475569;
+
+    line-height:1.7;
+
+}
+
+.notification-card small{
+
+    color:#94a3b8;
+
+}
+
+/* =====================================================
+   Empty State
+===================================================== */
+
+.empty-notifications{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(16px);
+
+    box-shadow:
+        0 15px 40px rgba(15,23,42,.08);
+
+}
+
+.empty-icon{
+
+    font-size:60px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.empty-notifications h4{
+
+    margin-bottom:12px;
+
+    color:#0f172a;
+
+}
+
+.empty-notifications p{
+
+    color:#64748b;
+
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media(max-width:992px){
+
+    .notifications-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .notification-actions{
+
+        width:100%;
+
+        justify-content:flex-start;
+
+        flex-wrap:wrap;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .notifications-header{
+
+        padding:20px;
+
+    }
+
+    .notifications-header h2{
+
+        font-size:24px;
+
+    }
+
+    .notification-actions{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .notification-actions button{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .notification-filter{
+
+        justify-content:center;
+
+    }
+
+    .notification-filter button{
+
+        flex:1;
+
+        justify-content:center;
+
+    }
+
+    .notification-card{
+
+        padding:18px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .notifications-header{
+
+        border-radius:18px;
+
+    }
+
+    .notification-card{
+
+        border-radius:16px;
+
+    }
+
+    .card-header{
+
+        flex-direction:column;
+
+        gap:8px;
+
+    }
+
+    .card-header h5{
+
+        font-size:16px;
+
+    }
+
+}

@@ -1,0 +1,99 @@
+.rating-summary {
+
+    background: #fff;
+
+    border-radius: 12px;
+
+    padding: 24px;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,.08);
+
+    margin-bottom: 30px;
+
+}
+
+.rating-overview {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+.average-rating {
+
+    font-size: 3rem;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+}
+
+.review-count {
+
+    margin-top: 10px;
+
+    color: #6c757d;
+
+}
+
+.rating-breakdown {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+.rating-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+.star-label {
+
+    width: 45px;
+
+    font-weight: 600;
+
+}
+
+.progress {
+
+    flex: 1;
+
+    height: 10px;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    background: #e9ecef;
+
+}
+
+.progress-bar {
+
+    height: 100%;
+
+    background: #ffc107;
+
+}
+
+.rating-value {
+
+    width: 35px;
+
+    text-align: right;
+
+    font-weight: 600;
+
+}
